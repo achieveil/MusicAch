@@ -114,10 +114,11 @@
         <Content Include="Pages\Login.aspx"/>
         <Content Include="Pages\Logout.aspx"/>
         <Content Include="Pages\Register.aspx"/>
-        <Content Include="REDEME.md" />
+        <Content Include="README.md" />
         <Content Include="Scripts\jquery-3.6.0.min.js"/>
         <Content Include="Videos\login.mp4"/>
         <Content Include="Web.config"/>
+        <Content Include="数据库初始脚本.sql" />
     </ItemGroup>
     <ItemGroup>
         <Compile Include="Global.asax.cs">
