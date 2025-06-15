@@ -107,6 +107,7 @@
     </ItemGroup>
     <ItemGroup>
         <Content Include="Content\style.css"/>
+        <Content Include="favicon.ico" />
         <Content Include="Global.asax"/>
         <Content Include="Pages\AddMusic.aspx"/>
         <Content Include="Pages\Default.aspx"/>
@@ -115,6 +116,7 @@
         <Content Include="Pages\Logout.aspx"/>
         <Content Include="Pages\Register.aspx"/>
         <Content Include="README.md" />
+        <Content Include="Scripts\jquery-3.6.0.js" />
         <Content Include="Scripts\jquery-3.6.0.min.js"/>
         <Content Include="Videos\login.mp4"/>
         <Content Include="Web.config"/>

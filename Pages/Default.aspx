@@ -4,6 +4,8 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 允许混合内容 -->
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <title>我的音乐-MusicAch</title>
     <link href="../Content/style.css" rel="stylesheet" type="text/css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
@@ -99,17 +101,27 @@
 
     <script>
         // 播放音乐
-        function playMusic(musicId, title) {
-            if (!musicId) {
-                alert('无法获取音乐ID');
-                return;
-            }
-            document.getElementById('playerTitle').textContent = '正在播放：' + title;
-            document.getElementById('playerContainer').innerHTML =
-                '<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="86" src="//music.163.com/outchain/player?type=2&id=' + musicId + '&auto=1&height=66"></iframe>';
-            document.getElementById('playerModal').style.display = 'flex';
+    function playMusic(musicId, title) {
+        if (!musicId) {
+            alert('无法获取音乐ID');
+            return;
         }
+        
+        document.getElementById('playerTitle').textContent = '正在播放：' + title;
+        
+        // 完全使用官方格式，只修改id和auto参数
+        var playerCode = '<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="530" height="86" ' +
+            'src="https://music.163.com/outchain/player?type=2&id=' + musicId + '&auto=0&height=66"></iframe>';
 
+        
+        // 居中显示
+        document.getElementById('playerContainer').innerHTML = 
+            '<div style="display:flex; justify-content:center; align-items:center; width:100%;">' + 
+            playerCode + 
+            '</div>';
+        
+        document.getElementById('playerModal').style.display = 'flex';
+    }
         // 关闭播放器
         function closePlayer() {
             document.getElementById('playerContainer').innerHTML = '';

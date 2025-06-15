@@ -6,7 +6,7 @@
 * 修改 Web.config 中的数据库密码
 
 `
-<connectionStrings>
+    <connectionStrings>
         <add name="MusicAchDB"
              connectionString="Server=[mysql数据库ip地址];Database=MusicAch;Uid=[数据库用户];Pwd=[你的数据库用户密码];charset=utf8mb4;"
              providerName="MySql.Data.MySqlClient"/>
@@ -24,5 +24,10 @@
 `
 
 * 测试功能：编辑、删除、播放
+  
+### 网易云音乐对某些曲目采取了严格的版权或授权控制措施。
 
+一些歌曲因为版权问题可能不允许在外部网站上播放，网易云播放器会拒绝播放这些受保护的歌曲。
+部分音乐播放需要用户已登录网易云账户，或者仅在特定区域内能够播放。如果播放请求不符合这些条件，播放器可能会返回错误或静默失败。
+从技术角度来看，没有办法通过修改这边的代码彻底解决网易云音乐播放器的版权限制问题。如果需要更好的播放体验，可能需要考虑使用网易云音乐提供的官方 API 进行授权认证，或者通过其他合法的方式获得播放权限。
 
