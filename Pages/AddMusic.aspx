@@ -18,7 +18,6 @@
         <div class="manage-main-content">
             <div class="manage-header">添加新音乐
             </div>
-            
             <div class="manage-form-area">
                 <asp:Panel ID="pnlMessage" runat="server" Visible="false" CssClass="manage-message-panel">
                     <asp:Label ID="lblMessage" runat="server"></asp:Label>

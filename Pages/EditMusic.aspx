@@ -19,14 +19,11 @@
             <div class="manage-header">
                 编辑音乐
             </div>
-            
             <div class="manage-form-area">
                 <asp:Panel ID="pnlMessage" runat="server" Visible="false" CssClass="manage-message-panel">
                     <asp:Label ID="lblMessage" runat="server"></asp:Label>
                 </asp:Panel>
-                
                 <asp:HiddenField ID="hdnMusicID" runat="server" />
-                
                 <div class="manage-form-group">
                     <label for="txtTitle">音乐标题 <span class="manage-required">*</span></label>
                     <asp:TextBox ID="txtTitle" runat="server" CssClass="form-control"></asp:TextBox>
@@ -36,7 +33,6 @@
                         Display="Dynamic"
                         CssClass="manage-text-danger"></asp:RequiredFieldValidator>
                 </div>
-                
                 <div class="manage-form-group">
                     <label for="txtMusicUrl">网易云音乐链接 <span class="manage-required">*</span></label>
                     <asp:TextBox ID="txtMusicUrl" runat="server" CssClass="form-control"></asp:TextBox>
@@ -46,7 +42,6 @@
                         Display="Dynamic"
                         CssClass="manage-text-danger"></asp:RequiredFieldValidator>
                 </div>
-                
                 <div class="manage-form-group">
                     <label for="txtCoverUrl">封面图片链接（可选）</label>
                     <asp:TextBox ID="txtCoverUrl" runat="server" CssClass="form-control"></asp:TextBox>

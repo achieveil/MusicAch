@@ -5,7 +5,6 @@
 <head runat="server">
     <meta charset="utf-8" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>登录-MusicAch</title>
     <link href="../Content/style.css" rel="stylesheet" type="text/css" />

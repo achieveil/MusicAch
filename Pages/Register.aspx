@@ -1,7 +1,7 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="MusicAch.Pages.Register" %>
 
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -66,7 +66,6 @@
                 <div class="auth-links">
                     <a  class="auth-text" href="Login.aspx">已有账户？立即登录</a>
                 </div>
-                    
                     </div>
             </div>
         </div>

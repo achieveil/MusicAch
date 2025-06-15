@@ -1,11 +1,10 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="MusicAch.Pages.Default" %>
+
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- 允许混合内容 -->
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <title>我的音乐-MusicAch</title>
     <link href="../Content/style.css" rel="stylesheet" type="text/css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
@@ -36,10 +35,8 @@
 
             <div class="main-content">
                 <div class="toolbar">
-                  
                     <asp:Label ID="lblSearchResult" runat="server" CssClass="search-result" Visible="false"></asp:Label>
                 </div>
-
                 <asp:Panel ID="pnlMusicList" runat="server">
                     <div class="music-list">
                         <asp:Repeater ID="rptMusic" runat="server" OnItemCommand="rptMusic_ItemCommand" OnItemDataBound="rptMusic_ItemDataBound">
@@ -81,7 +78,6 @@
                 </asp:Panel>
                 <div class="toolbar-add">
                     <asp:Button ID="btnAddMusic" runat="server" Text="➕ 添加音乐" CssClass="btn-add" OnClick="btnAddMusic_Click" />
-                   
                 </div>
                 <asp:Panel ID="pnlEmpty" runat="server" Visible="false" CssClass="empty-state">
                     <h3>📭 没有找到音乐</h3>
@@ -106,14 +102,11 @@
             alert('无法获取音乐ID');
             return;
         }
-        
+      
         document.getElementById('playerTitle').textContent = '正在播放：' + title;
-        
-        // 完全使用官方格式，只修改id和auto参数
         var playerCode = '<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="530" height="86" ' +
             'src="https://music.163.com/outchain/player?type=2&id=' + musicId + '&auto=0&height=66"></iframe>';
 
-        
         // 居中显示
         document.getElementById('playerContainer').innerHTML = 
             '<div style="display:flex; justify-content:center; align-items:center; width:100%;">' + 
