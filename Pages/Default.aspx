@@ -17,7 +17,9 @@
                     <div class="header-logo">MusicAch</div>
                     <span class="user-info">
                         欢迎，<asp:Label ID="lblUsername" runat="server" Font-Bold="true"></asp:Label>
-                        <a href="Logout.aspx" class="logout_btn">退出登录</a>
+                      
+                        <a href="Logout.aspx" class="logout_btn">退出</a>
+                        <a href="About.aspx" class="about_btn">关于</a>
                     </span>
                 </div>
             </div>

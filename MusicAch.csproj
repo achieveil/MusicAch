@@ -109,6 +109,7 @@
         <Content Include="Content\style.css"/>
         <Content Include="favicon.ico" />
         <Content Include="Global.asax"/>
+        <Content Include="Pages\About.aspx" />
         <Content Include="Pages\AddMusic.aspx"/>
         <Content Include="Pages\Default.aspx"/>
         <Content Include="Pages\EditMusic.aspx"/>
@@ -127,6 +128,10 @@
             <DependentUpon>Global.asax</DependentUpon>
         </Compile>
         <Compile Include="Models\DBHelper.cs"/>
+        <Compile Include="Pages\About.aspx.cs" />
+        <Compile Include="Pages\About.aspx.designer.cs">
+          <DependentUpon>About.aspx</DependentUpon>
+        </Compile>
         <Compile Include="Pages\AddMusic.aspx.cs">
             <DependentUpon>AddMusic.aspx</DependentUpon>
             <SubType>ASPXCodeBehind</SubType>

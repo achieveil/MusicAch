@@ -73,7 +73,7 @@ a{
     object-fit: cover;
 }
 
-.logo {
+.about-logo , .logo {
     font-size: 36px;
     color: rgba(245, 245, 247, 0.9);
     transition: font-size 0.3s ease;
@@ -231,10 +231,24 @@ a{
     font-weight: 400;
 }
 
-.user-info a:hover {
+.user-info .logout_btn:hover {
     background: #e74c3c;
     color: white;
+}
+.user-info .about_btn:hover {
+    background: #ed95fb;
+    color: white;   
+}
 
+.about_btn{
+    background: white;
+    padding:3px  10px;
+    /*margin:0  12px;*/
+    border-radius: 980px;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: all 0.3s;
 }
 .logout_btn{
     background: white;
@@ -320,8 +334,6 @@ a{
     background: linear-gradient(135deg, #ff3b30 0%, #c1272d 100%);
     color: rgb(245, 245, 247);
 }
-
-
 
 .btn-danger {
     background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
@@ -892,6 +904,15 @@ a{
     background-color: #f2f2f7;
     color: #86868b;
     cursor: not-allowed;
+}
+.about-header{
+    text-align: center;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    font-size: 36px;
+    color: rgba(245, 245, 247, 0.9);
+    transition: font-size 0.3s ease;
+    font-weight: 600
 }
 /* 响应式设计 */
 @media (max-width: 768px) {
