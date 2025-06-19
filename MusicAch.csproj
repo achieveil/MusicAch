@@ -107,6 +107,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\css\style.css" />
+    <Content Include="Content\images\img.png" />
+    <Content Include="Content\images\img_3.png" />
+    <Content Include="Content\images\img_1.png" />
+    <Content Include="Content\images\img_2.png" />
     <Content Include="Content\js\jquery-3.6.0.js" />
     <Content Include="Content\js\jquery-3.6.0.min.js" />
     <Content Include="Content\Videos\login.mp4" />
