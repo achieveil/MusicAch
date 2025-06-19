@@ -4,16 +4,15 @@
 <html lang="zh-CN">
 <head runat="server">
     <meta charset="utf-8" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>登录-MusicAch</title>
-    <link href="../Content/style.css" rel="stylesheet" type="text/css" />
+    <link href="../Content/css/style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <%-- 视频背景 --%>
     <div class="video-background">
          <video class="bg-video" autoplay muted loop playsinline>
-        <source src="../Videos/login.mp4" type="video/mp4" />
+        <source src="/Content/Videos/login.mp4" type="video/mp4" />
         </video>
     </div>
     

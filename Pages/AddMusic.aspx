@@ -6,12 +6,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>添加音乐 - MusicAch</title>
-    <link href="../Content/style.css" rel="stylesheet" type="text/css" />
+    <link href="../Content/css/style.css" rel="stylesheet" type="text/css" />
 </head>
 <body class="manage-container">
 <div class="video-background">
     <video class="bg-video" autoplay muted loop playsinline>
-        <source src="../Videos/login.mp4" type="video/mp4" />
+        <source src="/Content/Videos/login.mp4" type="video/mp4" />
     </video>
 </div>
     <form id="form1" runat="server">

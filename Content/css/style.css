@@ -195,7 +195,7 @@ a{
     }
 }
 
-/*---------------------------------------*/
+/*----------------------主界面-----------------*/
 /* 容器样式 */
 .container {
     background: #fdfdfd;
@@ -715,7 +715,7 @@ a{
     text-align: center;
     color: #2c3e50;
 }
-/*-------------------------*/
+/*-------------添加编辑界面------------*/
 .manage-container {
     margin: 0;
     min-height: 100vh;
@@ -914,6 +914,119 @@ a{
     transition: font-size 0.3s ease;
     font-weight: 600
 }
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.about-info {
+    margin-top: 30px;
+    color: rgba(245, 245, 247, 0.9);
+}
+
+.about-section {
+    margin-bottom: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    padding: 25px;
+    border-radius: 16px;
+    animation: slideIn 0.8s ease-out;
+}
+
+.about-section h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: rgba(245, 245, 247, 1);
+    font-weight: 600;
+}
+
+.about-section p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    color: rgba(245, 245, 247, 0.85);
+}
+
+.feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.feature-list li {
+    margin-bottom: 12px;
+    padding-left: 25px;
+    position: relative;
+    font-size: 16px;
+    color: rgba(245, 245, 247, 0.85);
+}
+
+.feature-list li:before {
+    content: "♪";
+    position: absolute;
+    left: 0;
+    color: #ff3b30;
+    font-size: 18px;
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.tech-item {
+    background: rgba(255, 59, 48, 0.2);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    color: rgba(245, 245, 247, 0.9);
+    backdrop-filter: blur(10px);
+}
+
+
+.footer-info {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgba(245, 245, 247, 0.6);
+    font-size: 14px;
+}
+
+.btn-back {
+    background: rgba(255, 255, 255, 0.2);
+    color: rgba(245, 245, 247, 0.9);
+    padding: 10px 24px;
+    border-radius: 980px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 20px auto;
+    transition: all 0.3s;
+    backdrop-filter: blur(10px);
+    font-weight: 500;
+}
+
+.btn-back:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 /* 响应式设计 */
 @media (max-width: 768px) {
     .auth-box {
