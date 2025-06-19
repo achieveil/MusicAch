@@ -1,6 +1,7 @@
 ﻿# MusicAch 音乐管理系统
 
-<div align="center">
+<div align="center"
+>
   <h1>MusicAch</h1>
   <p>基于 ASP.NET 4.7.2 的个人音乐收藏管理系统</p>
   <p>
@@ -77,6 +78,28 @@ USE MusicAch;
 2. 按 `F5` 运行项目
 3. 浏览器将自动打开并导航到登录页面
 
+## 🖼️ 界面预览
+![img_1.png](Content/images/img_1.png)
+![img_2.png](Content/images/img_2.png)
+![img_3.png](Content/images/img_3.png)
+![img_4.png](Content/images/img_4.png)
+![img_5.png](Content/images/img_5.png)
+
+### 登录界面
+- 动态视频背景
+- 流畅切换动画
+- 简洁的表单设计
+
+### 音乐库主页
+- 卡片式音乐展示
+- 悬停显示播放按钮
+- 响应式网格布局
+
+### 音乐播放器
+- 模态窗口设计
+- 网易云原生控件
+- 非侵入式体验
+
 ## 📚 使用指南
 
 ### 注册新用户
@@ -127,22 +150,7 @@ MusicAch/
 └── README.md          # 项目文档
 ```
 
-## 🖼️ 界面预览
 
-### 登录界面
-- 动态视频背景
-- 流畅切换动画
-- 简洁的表单设计
-
-### 音乐库主页
-- 卡片式音乐展示
-- 悬停显示播放按钮
-- 响应式网格布局
-
-### 音乐播放器
-- 模态窗口设计
-- 网易云原生控件
-- 非侵入式体验
 
 ## ⚠️ 注意事项
 
@@ -156,34 +164,11 @@ MusicAch/
 
 > 💡 建议添加可以正常外链播放的音乐，或使用网易云官方API进行授权
 
-### 性能优化建议
 
-- 建议上传的封面图片不超过 500KB
-- 视频背景文件建议压缩至 5MB 以内
-- 定期清理无效的音乐链接
-
-## 🤝 贡献指南
-
-欢迎提交 Issue 和 Pull Request！
-
-1. Fork 本仓库
-2. 创建您的特性分支 (`git checkout -b feature/AmazingFeature`)
-3. 提交您的更改 (`git commit -m 'Add some AmazingFeature'`)
-4. 推送到分支 (`git push origin feature/AmazingFeature`)
-5. 打开一个 Pull Request
-
-## 📄 开源协议
-
-本项目采用 MIT 协议开源 - 查看 [LICENSE](LICENSE) 文件了解详情
-
-## 🙏 致谢
-
-- 感谢网易云音乐提供的外链播放器支持
-- 感谢所有为本项目提供建议和反馈的朋友们
 
 ---
 
 <div align="center">
-  <p>Made with ❤️ by achieveil</p>
+  <p>Made  by achieveil</p>
   <p>如果觉得不错，请给个 ⭐ Star 支持一下</p>
 </div>
